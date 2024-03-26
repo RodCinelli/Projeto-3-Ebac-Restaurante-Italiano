@@ -80,6 +80,14 @@ body {
     color: #fff;
 }
 
+.text-colored-fale-conosco {
+    color: #DC143C;
+}
+
+.p-fale-conosco {
+    color: #008000;
+}
+
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
     background-color: #DC143C;
@@ -121,6 +129,8 @@ footer p, .github-link {
         height: 280px;
     } 
 }
+
+
 
 
 
