@@ -130,6 +130,22 @@ footer p, .github-link {
     } 
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-center-tablet {
+        margin-top: 80%;  
+    }
+}
+
+@media (max-width: 576px) { /* Para dispositivos móveis */
+    .mb-reduced {
+        margin-bottom: 30px !important; /* Diminui a margem */
+    }
+    .mb-increased {
+        margin-bottom: 30px !important; /* Aumenta a margem */
+    }
+}
+
+
 
 
 
