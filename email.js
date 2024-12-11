@@ -11,16 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Monta o corpo do email.
         const subject = `Mensagem de ${nome}`;
-        const body = `
-            Nome: ${nome}%0D%0A
-            E-mail: ${email}%0D%0A
-            Telefone: ${telefone}%0D%0A
-            Mensagem:%0D%0A
-            ${mensagem}
-        `;
+
+        const body = `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`;
+
+        // Codifica o corpo para uso em URLs
+        const encodedBody = encodeURIComponent(body);
 
         // Cria o link mailto.
-        const mailtoLink = `mailto:andre@engparente.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:andre@engparente.com.br?subject=${encodeURIComponent(subject)}&body=${encodedBody}`;
         window.location.href = mailtoLink;
 
         // Exibe uma mensagem de sucesso ao usuário.
