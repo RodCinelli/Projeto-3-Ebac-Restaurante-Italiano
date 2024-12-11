@@ -6,6 +6,10 @@ body {
     background-color: #DC143C;
 }
 
+.navbar-brand {
+    cursor: pointer; /* Adiciona o cursor de mão */
+}
+
 #cabecalho .nav .nav-link.active {
     background-color: #008000;
     color: #fff;
